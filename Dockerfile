@@ -4,7 +4,7 @@ MAINTAINER Serhii Matrunchyk <serhii@digitalidea.studio>
 
 RUN apt-get update && apt-get install -y \
     python-dev xvfb libgtk2.0-0 libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 \
-    lib32z1 lib32ncurses5 lib32bz2-1.0 libstdc++6:i386 \
+    lib32z1 lib32ncurses5 libbz2-1.0:i386 libstdc++6:i386 \
     g++ python-software-properties
 
 RUN add-apt-repository ppa:webupd8team/java -y && apt-get update
